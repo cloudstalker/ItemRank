@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:ItemRank" x:Class="ItemRank.ItemRankPage">
+	    <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Column="0">
+                <ListView x:Name="Heroes" ItemsSource="{Binding heroes}">
+			    </ListView>
+            </StackLayout>
+            <StackLayout Grid.Column="1">
+                <ListView x:Name="Items" />
+            </StackLayout>
+        </Grid>
+</ContentPage>
